@@ -1,0 +1,9 @@
+﻿@page "/live"
+
+<PageTitle>Live</PageTitle>
+
+@if (!string.IsNullOrEmpty(_videoId)) {
+    <video id=@_videoId autoplay muted playsinline>
+    </video>
+}
+
